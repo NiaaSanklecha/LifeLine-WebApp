@@ -1,0 +1,49 @@
+/* BookAppointment.css */
+
+.dashboard-container {
+    padding: 20px;
+    background-color: #f5f5f5;
+  }
+  
+  .location-search, .donor-center, .date-time, .review-book, .complete-booking {
+    margin: 20px 0;
+  }
+  
+  .btn-search, .btn-select, .btn-book {
+    background-color: #e74c3c;
+    border: none;
+    color: white;
+  }
+  
+  .btn-search:hover, .btn-select:hover, .btn-book:hover {
+    background-color: #c0392b;
+  }
+  
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 5px;
+  }
+  
+  .card-body {
+    padding: 20px;
+  }
+  
+  .metric-card {
+    margin-bottom: 20px;
+  }
+  
+  .metric-value {
+    font-size: 24px;
+    font-weight: bold;
+    color: #e74c3c;
+  }
+  
+  .activity-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .activity-list li {
+    margin-bottom: 10px;
+  }
+  

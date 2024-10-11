@@ -1,0 +1,67 @@
+.inventory-level {
+    list-style: none;
+    width: 100%;
+    max-width: 12%;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+.inventory-toggle {
+    position: relative;
+    display: block;
+    width: 80%;
+    margin: 0 auto;
+    -webkit-transition: transform 0.5s;
+    transition: transform 0.5s;
+    pointer-events: none;
+}
+
+img.inventory-image {
+    vertical-align: bottom;
+    width: 100%;
+    height: 100%;
+}
+ .inventory-gradient.full {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(180deg, #8c8c8c 0%, #bebebe 100%);
+    -webkit-mask-image: url(../../images/icon-inventory-drop.svg);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: bottom left;
+    -webkit-mask-size: cover;
+    mask-image: url(../../images/icon-inventory-drop.svg);
+    mask-repeat: no-repeat;
+    mask-position: bottom left;
+    mask-size: cover;
+}
+
+ .inventory-level-mask {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: #e7131a;
+    -webkit-mask-image: url(../../images/icon-inventory-drop.svg);
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: bottom left;
+    -webkit-mask-size: cover;
+    mask-image: url(../../images/icon-inventory-drop.svg);
+    mask-repeat: no-repeat;
+    mask-position: bottom left;
+    mask-size: cover;
+}
+.inventory-percent-target {
+    position: absolute;
+    display: table-cell;
+    width: 100%;
+    top: 45%;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 1;
+    font-size: 0.9em;
+    font-weight: 600;
+    color: #4d4d4d;
+}

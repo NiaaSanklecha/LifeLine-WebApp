@@ -1,0 +1,285 @@
+:root {
+  --dark-blue: rgb(233 184 184);
+  --medium-blue: linear-gradient(90deg, rgba(255, 0, 0, 1) 0%, rgba(176, 0, 0, 1) 100%);;
+  --soft-blue: #708aff;
+  --blue-sky: #1865f2;
+  --white: #fff;
+}
+body {
+  font-family: 'Open Sans', sans-serif;
+  
+  height: 100vh;
+}
+fieldset {
+  border: 0;
+  padding-block-start: 0;
+  margin-inline-end: 0;
+  padding-block-end: 0;
+  margin-inline-start: 0;
+  padding-inline-start: 0;
+  padding-inline-end: 0;
+}
+
+.App {
+  padding: 2rem;
+  background: var(--medium-blue);
+  display: flex;
+  flex-direction: column;
+}
+
+@media (min-width: 499px) {
+  .App {
+    height: 100vh;
+  }
+}
+
+@media (min-width: 576px) {
+  .App {
+    max-width: 35rem;
+    margin: 50px auto;
+  }
+}
+
+@media (min-width: 992px) {
+  .App {
+    max-height: 45rem;
+    max-width: 61rem;
+    border-radius: 1rem;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+}
+
+@media (min-width: 1200px) {
+  .App {
+    max-width: 70rem;
+  }
+
+}
+.DonationForm {
+    flex: 1;
+  }
+  @media (min-width: 992px) {
+    .DonationForm {
+      max-width: 65% !important;
+    }
+  }.GiftFrequency {
+    margin-top: 6rem;
+  }
+  
+  .Title {
+    color: var(--white);
+    padding: 0 0.8rem;
+    background: none;
+
+  }
+  .Frequency {
+    padding: 0.2rem;
+    background: var(--dark-blue);
+    border-radius: 5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    max-width: 90%;
+  }
+  
+  .RadioWrapper {
+    padding: 1.5rem 0.6rem;
+  }
+  
+  .Radio {
+    display: none;
+  }
+  
+  .Radio:checked + label {
+    background-color: var(--medium-blue);
+  }
+  
+  .RadioWrapper label {
+    cursor: pointer;
+    color: var(--white);
+    height: 90%;
+    padding: 1rem 1.4rem;
+    border-radius: 5rem;
+    transition: all ease-in-out 0.1s;
+  }
+  
+  .RadioWrapper label:hover {
+    background-color: var(--medium-blue);
+  }
+  
+  @media (min-width: 499px) {
+    .Frequency {
+      max-width: 80%;
+    }
+    .RadioWrapper {
+      padding: 0 1rem;
+    }
+    .RadioWrapper label {
+      padding: 1rem 1.9rem;
+    }
+  }
+  
+  @media (min-width: 992px) {
+    .GiftFrequency {
+      margin-top: 1rem;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .GiftFrequency {
+      margin-top: 1rem;
+    }
+    .Frequency {
+      max-width: 70%;
+    }
+    .RadioWrapper label {
+      padding: 1rem 2.1rem;
+    }
+  }
+
+  .SelectAmount {
+    margin-top: 3rem;
+  }
+  
+  .Title {
+    color: var(--white);
+    padding-bottom: 0.8rem;
+    margin-bottom: 0;
+  }
+  
+  .Amounts {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    row-gap: 1.6rem;
+    margin-top: 0.5rem;
+  }
+  
+  .Radio {
+    display: none;
+  }
+  .RadioWrapper {
+    margin-right: 0.5rem;
+  }
+  
+  .Radio:checked + label {
+    background-color: var(--white);
+    color: rgba(176, 0, 0, 1);
+  }
+  
+  .Radio + label {
+    cursor: pointer;
+    color: var(--white);
+    height: 90%;
+    border-radius: 5rem;
+    padding: 0.4rem 1rem;
+    border: 1px solid var(--dark-blue);
+    transition: all ease-in-out 0.1s;
+    font-weight: bold;
+  }
+  
+  .Radio + label:hover {
+    background-color: var(--white);
+    color: var(--dark-blue);
+  }
+  
+  @media (min-width: 499px) {
+    .Amounts {
+      grid-template-columns: repeat(5, 1fr);
+      margin-top: 0.5rem;
+    }
+  }
+
+  .NameInputWrapper {
+    padding: 0;
+    margin-top: 3rem;
+    border: 0;
+    display: flex;
+    flex-direction: column;
+  }
+  .NameInputWrapper label {
+    color: var(--white);
+    padding-bottom: 0.8rem;
+    padding: 0 0.8rem;
+  }
+  
+  .NameInput {
+    padding: 1rem;
+    border: 1.5px solid var(--dark-blue);
+    background: rgb(206 19 19);
+    color: var(--white);
+    border-radius: 3px;
+    margin: 0 0.8rem;;
+  }
+  
+  .NameInput::placeholder {
+    color: var(--white);
+    opacity: 0.6;
+  }
+  
+  .NameInputWrapper a {
+    margin-top: 1rem;
+    color: var(--soft-blue);
+    text-decoration: none;
+  }
+  .DonateButton {
+   
+    padding: 1rem 2rem;
+    background: var(--white);
+    color: rgba(176, 0, 0, 1);
+    border-radius: 3px;
+    border: 0;
+    cursor: pointer;
+    font-weight: 500;
+    font-size: 1.4rem;
+    margin: 0 0.8rem;
+    margin-top: 3rem;
+  }
+
+  .HelpUs {
+    color: var(--white);
+    flex: 1;
+  }
+  
+  .HelpUsParagraph {
+    font-weight: 600;
+    line-height: 1.7rem;
+    text-align: justify;
+  }
+  
+  @media (min-width: 992px) {
+    .HelpUs {
+      max-width: 45%;
+    }
+    .HelpUsParagraph {
+      max-width: 90%;
+    }
+  }
+  
+  @media (min-width: 1200px) {
+    .HelpUs {
+      max-width: 50%;
+    }
+  }
+
+  .HelpUsTitle {
+    padding: 0 0.8rem;
+    background: none;
+    font-size: 1.6rem;
+    text-align: justify;
+  }
+  .HelpUsTitle h1{
+    color: var(--white);
+  }
+  
+  .HelpUs {
+    color: var(--white);
+    flex: 1;
+  }
+  
+  @media (min-width: 1200px) {
+    .HelpUsTitle {
+      font-size: 2rem;
+    }
+  }

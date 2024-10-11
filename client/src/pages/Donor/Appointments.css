@@ -1,0 +1,57 @@
+/* Appointments container */
+.appointments-container {
+    padding: 2rem; /* Add padding around the container */
+    background-color: #f8f9fa; /* Light background color for the container */
+    border-radius: 10px; /* Rounded corners for the container */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    margin-top: 4rem; /* Add top margin to separate from other elements */
+  }
+  
+  /* Table styles */
+  .table {
+    width: 100%; /* Full width of the container */
+    border-collapse: collapse; /* Collapse table borders */
+  }
+  
+  /* Table header styles */
+  .table thead th {
+    background-color: #dc3545; /* Red background for the header */
+    color: #fff; /* White text color */
+    text-align: center; /* Center align text */
+    padding: 0.75rem; /* Add padding for spacing */
+    font-weight: bold; /* Bold text */
+  }
+  
+  /* Table row styles */
+  .table tbody tr {
+    border-bottom: 1px solid #ddd; /* Light border between rows */
+  }
+  
+  /* Table cell styles */
+  .table td {
+    padding: 0.75rem; /* Add padding for spacing */
+    text-align: center; /* Center align text */
+  }
+  
+  /* Table row hover effect */
+  .table tbody tr:hover {
+    background-color: #f1f1f1; /* Light grey background on hover */
+  }
+  
+  /* Centered container */
+  .appointments-container {
+    max-width: 1000px; /* Max width for large screens */
+    margin: 0 auto; /* Center align the container */
+  }
+  
+  /* Responsive adjustments */
+  @media (max-width: 768px) {
+    .appointments-container {
+      padding: 1rem; /* Reduce padding for smaller screens */
+    }
+  
+    .table td, .table th {
+      font-size: 0.875rem; /* Slightly smaller font size */
+    }
+  }
+  

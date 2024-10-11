@@ -1,0 +1,30 @@
+enum roleType {
+  Donor
+  Receiver
+  Admin
+}
+type User {
+  _id: ID!
+  id: Int
+  firstname: String
+  lastname: String
+  dateOfBirth: GraphQLDate
+  email: String
+  password: String
+  role: roleType
+}
+
+scalar GraphQLDate
+
+input UserInput {
+  firstname: String
+  lastname: String
+  dateOfBirth: GraphQLDate
+  email: String
+  password: String
+  role: roleType
+}
+
+type Mutation {
+  addUser(user: UserInput!): User!
+}

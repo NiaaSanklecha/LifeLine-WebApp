@@ -1,0 +1,51 @@
+/* DonorStats.css */
+.donor-stats {
+    padding: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    margin: 0 auto;
+  }
+  
+  .stats-heading {
+    color: #dc3545;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .stats-card {
+    text-align: center;
+    border: none;
+    background-color: #f8f9fa;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 200px; /* Ensuring all cards have the same height */
+  }
+  
+  .stats-card .card-title {
+    color: #dc3545;
+    font-weight: bold;
+  }
+  
+  .stats-card .stats-value {
+    color: #343a40;
+    font-size: 2rem;
+    font-weight: bold;
+  }
+  
+  .btn-view-details {
+    display: block;
+    margin: 2rem auto;
+    background-color: #dc3545;
+    border-color: #dc3545;
+    color: #fff;
+  }
+  
+  .btn-view-details:hover {
+    background-color: #c82333;
+    border-color: #bd2130;
+  }
+  
